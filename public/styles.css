@@ -1,0 +1,72 @@
+/* public/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 5px;
+  width: 100%; /* 让输入框宽度自适应容器 */
+  box-sizing: border-box; /* 确保边框和填充不会增加元素宽度 */
+}
+
+#passwordResult,
+#serialResult,
+#changeHfPasswordResult {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#logTableContainer {
+  margin-top: 20px;
+}
+
+#logTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+#logTable th,
+#logTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#logTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#logTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

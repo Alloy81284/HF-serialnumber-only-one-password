@@ -1,0 +1,49 @@
+<!-- public/admin.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>管理员面板</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>管理员面板</h2>
+  
+  <!-- 登录表单 -->
+  <div id="loginSection">
+    <h3>登录</h3>
+    <input type="text" id="loginUsername" placeholder="用户名">
+    <input type="password" id="loginPassword" placeholder="密码">
+    <button id="loginButton">登录</button>
+    <div id="loginResult"></div>
+  </div>
+
+  <!-- 登录后的管理员面板 -->
+  <div id="adminPanel" style="display: none;">
+    <button id="generateSerialButton">生成序列码</button>
+    <div id="serialResult"></div>
+    <h3>修改HF房间公示密码</h3>
+    <input type="password" id="newHfPassword" placeholder="新的HF房间公示密码">
+    <button id="changeHfPasswordButton">修改HF房间公示密码</button>
+    <div id="changeHfPasswordResult"></div>
+    <h3>IP日志</h3>
+   <div id="logTableContainer">
+  <table id="logTable">
+    <thead>
+      <tr>
+        <th>日期</th>
+        <th>IP</th>
+        <th>IP归属地</th>
+        <th>序列码</th>
+      </tr>
+    </thead>
+    <tbody id="logTableBody"></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
